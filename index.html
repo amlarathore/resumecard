@@ -92,7 +92,7 @@ layout: default
         </div>
         <div class="col-md-4">
             {% if site.author.stackoverflow or site.author.programmingSkills %}
-                <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Programming Skills</h3>
+                <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Skills</h3>
                 {% if site.author.stackoverflow %}
                 <div class="grid-block">
                   <p><a href="//stackoverflow.com/users/{{ site.author.stackoverflow }}"><img src="//stackoverflow.com/users/flair/{{ site.author.stackoverflow }}.png"></a></p>
@@ -238,43 +238,13 @@ layout: default
             {% endif %}
             {% if site.author.frameworks %}
             <div class="deviter"></div>
-            <h3 class="title with-icon"><span class="fa fa-globe cat-title"></span>Frameworks & Libraries</h3>
+            <h3 class="title with-icon"><span class="fa fa-globe cat-title"></span>Related Experience</h3>
             <div class="grid-block">
                 <ul class="list-unstyled list-strip">
                     {% for framework in site.author.frameworks %}
                     {% if framework.name %}
                     <li>
                         <i class="fa fa-check"></i> <span class="badge badge-green badge-right-float"></span>{{ framework.name }}
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-            {% if site.author.databases %}
-            <div class="deviter"></div>
-            <h3 class="title with-icon"><span class="fa fa-database cat-title"></span>Databases</h3>
-            <div class="grid-block">
-                <ul class="list-unstyled list-strip">
-                    {% for database in site.author.databases %}
-                    {% if database.name %}
-                    <li>
-                        <i class="fa fa-check"></i> <span class="badge badge-green badge-right-float"></span>{{ database.name }}
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-            {% if site.author.clouds %}
-            <div class="deviter"></div>
-            <h3 class="title with-icon"><span class="fa fa-cloud cat-title"></span>Cloud</h3>
-            <div class="grid-block">
-                <ul class="list-unstyled list-strip">
-                    {% for cloud in site.author.clouds %}
-                    {% if cloud.name %}
-                    <li>
-                        <i class="fa fa-check"></i> <span class="badge badge-green badge-right-float"></span>{{ cloud.name }}
                     </li>
                     {% endif %}
                     {% endfor %}
